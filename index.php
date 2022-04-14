@@ -9,8 +9,8 @@
   <h2>Formulário para Inscrição de Competidores</h2>
 
   <form action="script.php" method="post">
-    <p>Seu nome: <input type="text" name="nome" /></p>
-    <p>Sua idade: <input type="text" name="idade" /></p>
+    <p>Seu nome: <input type="text" name="nome" required /></p>
+    <p>Sua idade: <input type="number" name="idade" required /></p>
     <p><input type="submit" value="Enviar dados do Competidor"/></p>
   </form>
 </body>
