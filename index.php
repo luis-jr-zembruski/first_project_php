@@ -1,17 +1,17 @@
-<?php
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Inscrição</title>
+</head>
+<body>
+  <h2>Formulário para Inscrição de Competidores</h2>
 
-$categorias = [];
-$categorias[] = 'infantil';
-$categorias[] = 'adolescentes';
-$categorias[] = 'adulto';
-
-$nome = 'Eduardo';
-$idade = 18;
-
-if($idade >= 6 && $idade <= 12){
-  echo "Categoria: $categorias[0]";
-}elseif($idade > 12 && $idade <= 18){
-  echo "Categoria: $categorias[1]";
-}else{
-  echo "Categoria: $categorias[2]";
-}
+  <form action="script.php" method="post">
+    <p>Seu nome: <input type="text" name="nome" /></p>
+    <p>Sua idade: <input type="text" name="idade" /></p>
+    <p><input type="submit" value="Enviar dados do Competidor"/></p>
+  </form>
+</body>
+</html>
