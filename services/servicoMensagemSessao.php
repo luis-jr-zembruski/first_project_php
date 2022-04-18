@@ -21,7 +21,7 @@ function setarMensagemErro(string $mensagem) : void {
 }
 
 function obterMensagemErro() : ?string {
-  if(isset($_SESSION["mensagem-de-error"])) {
+  if(isset($_SESSION["mensagem-de-erro"])) {
     return $_SESSION["mensagem-de-erro"];
   }
   return null;
@@ -30,8 +30,8 @@ function obterMensagemErro() : ?string {
 
 
 function removerMensagemErro() : void {
-  if(isset($_SESSION["mensagem-de-error"])) {
-    unset($_SESSION["mensagem-de-error"]);
+  if(isset($_SESSION["mensagem-de-erro"])) {
+    unset($_SESSION["mensagem-de-erro"]);
   }
 }
 
